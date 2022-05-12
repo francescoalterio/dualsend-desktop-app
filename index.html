@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <!-- https://developer.mozilla.org/en-US/docs/Web/HTTP/CSP -->
+    <meta
+      http-equiv="Content-Security-Policy"
+      content="default-src 'self'; script-src 'self'"
+    />
+    <meta
+      http-equiv="X-Content-Security-Policy"
+      content="default-src 'self'; script-src 'self'"
+    />
+    <title>Hello World!</title>
+    <link rel="stylesheet" href="./src/styles/style.css" />
+    <link rel="stylesheet" href="./src/styles/spinner.css" />
+  </head>
+  <body>
+    <div class="background">
+      <div class="box-spinner">
+        <h1 class="h1">El servidor esta en marcha!</h1>
+        <div class="spinner"></div>
+      </div>
+      <div class="box-ip">
+        <h2 class="text-serverip">IP del Servidor</h2>
+        <p id="ip"></p>
+      </div>
+    </div>
+
+    <script type="module" src="./src/index.js"></script>
+  </body>
+</html>
